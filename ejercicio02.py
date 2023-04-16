@@ -85,5 +85,5 @@ def print_students_nf(lista_estudiantes):
 
 
 # CÓDIGO EJECUTABLE
-if __name__ == "__main__":
-    print_students_nf(add_final_grade(read_csv('data/calificaciones.csv')))
+
+print_students_nf(add_final_grade(read_csv('data/calificaciones.csv')))
