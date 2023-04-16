@@ -23,7 +23,7 @@ def cambios_lista_estudiantes(lista_estudiantes):
         estudiante["Parcial2"] = arreglos_vacio(estudiante["Parcial2"])
         estudiante["Practicas"] = arreglos_vacio(estudiante["Practicas"])
         estudiante["NotaFinal"] = arreglos_vacio(estudiante["NotaFinal"])
-        estudiante["Asistencia"] = arreglo_porcentaje(estudiante["Asistencia"])
+        estudiante["Asistencia"] = arreglo_porcentajes(estudiante["Asistencia"])
     return lista_estudiantes
 
 def aprobados_suspensos(lista_estudiantes):
@@ -49,4 +49,3 @@ if __name__ == "__main__":
     lista_estudiantes = cambios_lista_estudiantes(add_final_grade(read_csv("data/calificaciones.csv")))
     aprobados, suspensos = aprobados_suspensos(lista_estudiantes)
     print_aprobados_suspensos(aprobados, suspensos)
-
