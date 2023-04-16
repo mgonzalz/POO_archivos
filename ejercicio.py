@@ -19,10 +19,12 @@ def read_csv(filename):
             estudiante["Practicas"] = informacion[7]
             estudiante["OrdinarioPracticas"] = informacion[8]
             estudiantes.append(estudiante)
-    return estudiantes
+    return sorted(estudiantes, key=lambda estudiante: estudiante['Apellidos'])
+
+
 
 def print_students(calificaciones):
-    for student in calificaciones:
-        print("Nombre completo: {} {}\nAsistencia: {}\nParcial 1: {}\nParcial 2: {}\nOrdinario 1: {}\nOrdinario 2: {}\nPrácticas: {}\nOrdinario de prácticas: {}\n".format(student['Nombre'], student['Apellidos'], student['Asistencia'], student['Parcial1'], student['Parcial2'], student['Ordinario1'], student['Ordinario2'], student['Practicas'], student['OrdinarioPracticas']))
+    for estudiante in calificaciones:
+        print("Nombre completo: {} {}\n".format(estudiante['Nombre'], estudiante['Apellidos']))
 
 print_students(read_csv('calificaciones.csv'))
