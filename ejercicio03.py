@@ -37,12 +37,12 @@ def aprobados_suspensos(lista_estudiantes):
     return aprobados, suspensos
 
 def print_aprobados_suspensos(aprobados, suspensos):
-    print("APROBADOS")
+    print("-------------------------APROBADOS-------------------------")
     for estudiante in aprobados:
-        print(f"Nombre completo: {estudiante['Nombre']} {estudiante['Apellidos']}")
-    print("SUSPENSOS")
+        print(f"Nombre completo: {estudiante['Nombre']} {estudiante['Apellidos']} \nAsistencia: {estudiante['Asistencia']} \nParcial 1: {estudiante['Parcial1']} \nParcial 2: {estudiante['Parcial2']} \nOrdinario 1: {estudiante['Ordinario1']} \nOrdinario 2: {estudiante['Ordinario2']} \nPrácticas: {estudiante['Practicas']} \nOrdinario Prácticas: {estudiante['OrdinarioPracticas']} \nNota Final: {estudiante['NotaFinal']} \n")    
+    print("-------------------------SUSPENSOS-------------------------")
     for estudiante in suspensos:
-        print(f"Nombre completo: {estudiante['Nombre']} {estudiante['Apellidos']}")
+        print(f"Nombre completo: {estudiante['Nombre']} {estudiante['Apellidos']} \nAsistencia: {estudiante['Asistencia']} \nParcial 1: {estudiante['Parcial1']} \nParcial 2: {estudiante['Parcial2']} \nOrdinario 1: {estudiante['Ordinario1']} \nOrdinario 2: {estudiante['Ordinario2']} \nPrácticas: {estudiante['Practicas']} \nOrdinario Prácticas: {estudiante['OrdinarioPracticas']} \nNota Final: {estudiante['NotaFinal']} \n")
 
 #CÓDIGO EJECUTABLE
 if __name__ == "__main__":
