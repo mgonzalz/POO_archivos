@@ -73,6 +73,7 @@ def add_final_grade(lista_estudiantes):
 
 
         estudiante['NotaFinal'] = 0.3*nota1 + 0.3*nota2 + 0.4*nota_practicas
+        estudiante['NotaFinal'] = round(estudiante['NotaFinal'], 3) #NOTA FINAL REDONDEADA A 3 DECIMALES
 
     return lista_estudiantes
 
