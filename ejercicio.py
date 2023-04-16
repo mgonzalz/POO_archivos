@@ -18,7 +18,7 @@ def read_csv(filename):
             estudiante["Practicas"] = informacion[7]
             estudiante["OrdinarioPracticas"] = informacion[8]
             estudiantes.append(estudiante)
-    return sorted(estudiantes, key=lambda estudiante: estudiante['Apellidos'])
+    return sorted(estudiantes, key=lambda estudiante: estudiante['Apellidos']) #lambda define el criterio de ordenamiento
 
 def print_students(estudiantes):
     for estudiante in estudiantes:
