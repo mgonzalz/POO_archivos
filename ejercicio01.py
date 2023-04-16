@@ -24,4 +24,4 @@ def print_students(estudiantes):
     for estudiante in estudiantes:
         print("Nombre completo: {} {}\nAsistencia: {}\nParcial 1: {}\nParcial 2: {}\nOrdinario 1: {}\nOrdinario 2: {}\nPrácticas: {}\nOrdinario de prácticas: {}\n".format(estudiante['Nombre'], estudiante['Apellidos'], estudiante['Asistencia'], estudiante['Parcial1'], estudiante['Parcial2'], estudiante['Ordinario1'], estudiante['Ordinario2'], estudiante['Practicas'], estudiante['OrdinarioPracticas']))
 
-print_students(read_csv('calificaciones.csv'))
+print_students(read_csv('data/calificaciones.csv'))
